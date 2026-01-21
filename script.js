@@ -17,7 +17,7 @@ const projects = [
     {
         id: 2,
         title: "Spring 2021",
-        desc: "Models: Luka, Denis, Teja, Petra<br><br>MUA: Nina Burazor<br><br>odels: Matjaž, Nejc, Mateja, Klara<br><br>MUA: Nina BUrazor<br><br>Photographer: Rok Vrečer",
+        desc: "Models: Luka, Denis, Teja, Petra<br><br>odels: Matjaž, Nejc, Mateja, Klara<br><br>MUA: Nina Burazor<br><br>Photographer: Rok Vrečer",
         images: getImages("2021 SPRING", 25),
         featureImg: "img/MOOD SPRING 2021.webp"
     },
