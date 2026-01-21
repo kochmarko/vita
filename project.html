@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Vita Hudournik</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <header class="glass-panel">
+        <a href="index.html" class="logo">Vita Hudournik</a>
+        <nav>
+            <a href="index.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="project-view" class="project-view"></section>
+    </main>
+
+    <div id="lightbox" class="lightbox" onclick="if(event.target === this) closeLightbox()">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <button class="lightbox-arrow left" onclick="changeLightboxImage(-1)">&#8249;</button>
+        <img id="lightbox-img" src="" alt="Full screen">
+        <button class="lightbox-arrow right" onclick="changeLightboxImage(1)">&#8250;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

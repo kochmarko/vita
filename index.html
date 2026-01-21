@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vita Hudournik | Stylist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Elements for Glass Effect -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <header class="glass-panel">
+        <a href="index.html" class="logo">Vita Hudournik</a>
+        <nav>
+            <a href="index.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main Accordion Gallery -->
+        <section id="home-view" class="accordion-container glass-panel">
+            <!-- Generating 8 items via JS or static HTML. Using static for clarity. -->
+            
+            <div class="accordion-item" onclick="location.href='project.html?id=2'" style="background-image: url('img/2021 SPRING/img (1).webp')">
+                <div class="item-content"><span>2021 SPRING</span></div>
+            </div>
+            <div class="accordion-item" onclick="location.href='project.html?id=3'" style="background-image: url('img/2021 SUMMER/img (1).webp')">
+                <div class="item-content"><span>2021 SUMMER</span></div>
+            </div>
+            <div class="accordion-item" onclick="location.href='project.html?id=1'" style="background-image: url('img/2021 FALL_WINTER/img (1).webp')">
+                <div class="item-content"><span>2021 FALL\WINTER</span></div>
+            </div>
+            <div class="accordion-item" onclick="location.href='project.html?id=5'" style="background-image: url('img/2022 SPRING_SUMMER/img (1).webp')">
+                <div class="item-content"><span>2022 SPRING\SUMMER</span></div>
+            </div>
+            <div class="accordion-item" onclick="location.href='project.html?id=4'" style="background-image: url('img/2022 FALL_WINTER/img (1).webp')">
+                <div class="item-content"><span>2022 FALL\WINTER</span></div>
+            </div>
+                        <div class="accordion-item" onclick="location.href='project.html?id=6'" style="background-image: url('img/2023 SPRING_SUMMER/img (1).webp')">
+                <div class="item-content"><span>2023 SPRING\SUMMER</span></div>
+            </div>
+            <div class="accordion-item" onclick="location.href='project.html?id=7'" style="background-image: url('img/2024 SPRING_SUMMER/img (1).webp')">
+                <div class="item-content"><span>2024 SPRING\SUMMER</span></div>
+            </div>
+            <div class="accordion-item" onclick="location.href='project.html?id=8'" style="background-image: url('img/2025 SPRING_SUMMER/img (1).webp')">
+                <div class="item-content"><span>2025 SPRING\SUMMER</span></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
