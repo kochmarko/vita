@@ -257,9 +257,23 @@ main {
 
 .split-left { flex: 1; }
 .split-left img { width: 100%; border-radius: 15px; }
-.split-right { flex: 1; }
+.split-right {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
 .split-right h2 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 2.5rem; margin-bottom: 1rem; }
 .split-right p { line-height: 1.6; color: #555; }
+
+.project-video {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Lightbox */
 .lightbox {
@@ -380,5 +394,15 @@ main {
         gap: 2rem;
         margin-top: 2rem;
         padding: 2rem;
+    }
+
+    .split-right {
+        flex-direction: column;
+    }
+
+    .project-video {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }

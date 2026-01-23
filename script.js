@@ -10,28 +10,28 @@ const projects = [
     {
         id: 1,
         title: "Fall Winter 2021",
-        desc: "Models: Tilen, Alina, Žan, Leilani, Kim<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer",
+        desc: "Models: Alina, Tilen, Kim, Žan, Leilani<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer",
         images: getImages("2021 FALL_WINTER", 21),
         featureImg: "img/MOOD FALL WINTER 2021.webp"
     },
     {
         id: 2,
         title: "Spring 2021",
-        desc: "Models: Luka, Denis, Teja, Petra<br><br>Matjaž, Nejc, Mateja, Klara<br><br>MUA: Nina Burazor<br><br>Photographer: Rok Vrečer",
+        desc: "Models: Teja, Petra, Luka, Denis <br><br>Mateja, Klara, Matjaž, Nejc<br><br>MUA: Nina Burazor<br><br>Photographer: Rok Vrečer",
         images: getImages("2021 SPRING", 25),
         featureImg: "img/MOOD SPRING 2021.webp"
     },
     {
         id: 3,
         title: "Summer 2021",
-        desc: "Models: Marko, Jaka, Sarah, Ema<br><br>MUA: Maša Pavlič<br><br>Photographer: Rok Vrečer",
+        desc: "Models: Marko, Sarah, Jaka, Ema<br><br>MUA: Maša Pavlič<br><br>Photographer: Rok Vrečer",
         images: getImages("2021 SUMMER", 20),
         featureImg: "img/MOOD SUMMER 2021.webp"
     },
     {
         id: 4,
         title: "Fall Winter 2022",
-        desc: "Models: Aleksa, Sandro, Robin, Andjela<br><br>MUA: Nina Burazor<br><br>Photographer: Rok Vrečer",
+        desc: "Models: Robin, Andjela, Aleksa, Sandro<br><br>MUA: Nina Burazor<br><br>Photographer: Rok Vrečer",
         images: getImages("2022 FALL_WINTER", 26),
         featureImg: "img/MOOD FALL WINTER 2022.webp"
     },
@@ -45,23 +45,24 @@ const projects = [
     {
         id: 6,
         title: "Spring Summer 2023",
-        desc: "Models: Mark, Jaka, Luka, Laura, Neža, Maša<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer",
+        desc: "Models: Neža, Maša, Laura, Jaka, Luka, Mark<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer",
         images: getImages("2023 SPRING_SUMMER", 24),
         featureImg: "img/MOOD SPRING SUMMER 2023.webp"
     },
     {
         id: 7,
         title: "Spring Summer 2024",
-        desc: "Models: Luka and Laura<br><br>MUA: Nina Butkovič<br><br>Photographer: Rok Vrečer",
+        desc: "Models: Laura and Luka<br><br>MUA: Nina Butkovič<br><br>Photographer: Rok Vrečer",
         images: getImages("2024 SPRING_SUMMER", 19),
         featureImg: "img/MOOD SPRING SUMMER 2024.webp"
     },
     {
         id: 8,
         title: "Summer 2025",
-        desc: "Models: Luka and Laura<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer",
+        desc: "Models: Laura and Luka<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer",
         images: getImages("2025 SPRING_SUMMER", 26),
-        featureImg: "img/MOOD SPRING SUMMER 2025.webp"
+        featureImg: "img/MOOD SPRING SUMMER 2025.webp",
+        video: "img/vid.mp4"
     }
 ];
 
@@ -130,9 +131,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${data.featureImg}" alt="Feature">
             </div>
             <div class="split-right">
-                <h2>${data.title}</h2>
-                <p>${data.desc}</p>
-                <br>
+                <div>
+                    <h2>${data.title}</h2>
+                    <p>${data.desc}</p>
+                </div>
+                ${data.video ? `<video controls class="project-video">
+                    <source src="${data.video}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>` : ''}
             </div>
         </div>
     `;
