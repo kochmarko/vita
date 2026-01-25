@@ -48,7 +48,8 @@ const projects = [
         title: "Spring Summer 2023",
         desc: "Models: Neža, Maša, Laura, Jaka, Luka, Mark<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer",
         folder: "2023 SPRING_SUMMER",
-        featureImg: "img/MOOD SPRING SUMMER 2023.webp"
+        featureImg: "img/MOOD SPRING SUMMER 2023.webp",
+        video: "img/vid2.mp4"
     },
     {
         id: 7,
