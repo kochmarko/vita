@@ -46,7 +46,7 @@ const projects = [
     {
         id: 6,
         title: "Spring Summer 2023",
-        desc: "Models: Neža, Maša, Laura, Jaka, Luka, Mark<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer",
+        desc: "Models: Neža, Maša, Laura, Jaka, Luka, Mark<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer<br><br>Video production: Produkcija Studio",
         folder: "2023 SPRING_SUMMER",
         featureImg: "img/MOOD SPRING SUMMER 2023.webp",
         video: "img/vid2.mp4"
@@ -61,7 +61,7 @@ const projects = [
     {
         id: 8,
         title: "Summer 2025",
-        desc: "Models: Laura and Luka<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer",
+        desc: "Models: Laura and Luka<br><br>MUA: Lea Bole<br><br>Photographer: Rok Vrečer<br><br>Video production: Pro-motion",
         folder: "2025 SPRING_SUMMER",
         featureImg: "img/MOOD SPRING SUMMER 2025.webp",
         video: "img/vid.mp4"
